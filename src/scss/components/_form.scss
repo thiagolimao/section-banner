@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Components Form
+--------------------------------------------------------------*/
+.input-group {
+  &.search {
+    .form-control {
+      padding: 0.625rem 2.125rem;
+      border-radius: 0.675rem;
+      height: 44px;
+      border-color: $secondary;
+
+      &:focus,
+      &:focus-visible {
+        outline: none;
+        box-shadow: none;
+      }
+
+      &::-webkit-input-placeholder,
+      &::-moz-placeholder,
+      &:-ms-input-placeholder,
+      &:-webkit-input-placeholder {
+        color: #f0f0f0;
+      }
+    }
+
+    .input-group-append {
+      margin-left: -0.675rem;
+      z-index: 10;
+      > .btn {
+        border-radius: 0.675rem;
+        padding: 0.625rem 2.525rem;
+        border: none;
+      }
+    }
+  }
+  &.courses {
+    margin-top: 1rem;
+  }
+}
