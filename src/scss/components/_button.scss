@@ -66,6 +66,25 @@
       box-shadow: 0 0 0 0.2rem rgba($primary, 25%);
     }
   }
+  &.btn-dark-primary {
+    background-color: $dark-primary;
+    border-color: $dark-primary;
+    color: $white;
+    // border-radius: 2rem;
+
+    &:hover,
+    &:active,
+    &:not(:disabled):not(.disabled):active {
+      background-color: $primary-hover;
+      border-color: $primary-hover;
+      color: $white;
+    }
+
+    &:focus,
+    &:active {
+      box-shadow: 0 0 0 0.2rem rgba($dark-primary, 25%);
+    }
+  }
   &.btn-secondary {
     background-color: $secondary;
     border-color: $secondary;
